@@ -1,0 +1,29 @@
+Jaeger, Becca
+ER Diagram 4 - Sam's Software Suppliers 
+
+employee - PK_SSN
+	   lname, fname, phone, address, rate, manager, FK_deptcode
+client - PK_clientcode
+	  contactname, phone, address, email
+division - PK_divcode
+	   division, FK_deptcode
+project - PK_projnum
+	  projname
+department - PK_deptcode
+	     department 
+
+1 department can have M employees       T
+1 employee can belong to M departments   F
+1 to M, parent=department, child=employee
+
+1 employee can work on M projects    T
+1 project can use M employees        T
+M to M, resolve with junction= workassignments - PK_SSN, PK_projnum, hours
+
+1 division can have M departments	T
+1 department can be in many divisions   F
+1 to M, parent=division, child=department
+
+1 client can comission M projects    T
+1 project can be for M clients       F
+1 to M, parent=client, child=project

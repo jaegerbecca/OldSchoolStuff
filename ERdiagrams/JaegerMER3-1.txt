@@ -1,0 +1,34 @@
+Jaeger, Becca 
+ER Diagram 3 - Miracle Dentistry Clinic
+
+customers - custphone_PK
+	    firstname, lastname, address, birthdate, insurance
+
+appointments - date+custphone_PK
+	       date, time, room, custphone_FK, serviceCode_FK, dSSN_FK
+
+services(lookup table) - serviceCode_PK
+			 services
+dentists - dSSN_PK
+	   firstname, lastname, phone, address, birthdate
+assistants - aSSN_PK
+	     firstname, lastname, phone, address, birthdate
+
+1 customer can have M appointments     T
+1 appointment can include M customers  F
+1 to M, parent=customers, child=appointments
+
+1 dentist can work with M assistants   T
+1 assistant can work with M dentists   T
+M to M, resolve with junction table = workTeam - dSSN_PK, aSSN_PK
+
+1 dentist can fill M appointments   T
+1 appointment can have M dentists   F
+1 to M, parent=dentists, child=appointments
+
+1 appointment can include M services          T
+1 service can be included in M appointments   T
+M to M, resolve with junction table = workdone - serviceCode_PK, date+custphone_PK
+
+
+

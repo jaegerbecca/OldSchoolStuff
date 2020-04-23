@@ -1,0 +1,82 @@
+﻿/*Becca Jaeger*/
+body {
+    background-color:#f2f2f2;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    font-size:12px;
+}
+h1,h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size:14px;
+    font-variant:small-caps;
+    font-weight:bold;
+}
+h3{
+    font-size:10px;
+}
+label{
+    font-weight:bold;
+    display:table-cell;
+    padding-right:5px;
+    text-align:right;
+}
+input{
+    display:table-cell;
+    margin-bottom:5px;
+}
+input[type=submit]{
+    margin-top:10px;
+    margin-left:70px;
+}
+input[type=text]:focus{
+    background-color:cornsilk;
+}
+.chk{
+    display:inline;
+    margin-left:275px;
+}
+.rad{
+    display:inline;
+    margin-left:140px;
+}
+.error{
+    color:red;
+    font-style:italic;
+}
+a {
+    -webkit-appearance: button;      
+    -moz-appearance: button;      
+    background-color: buttonface;   
+    color: buttontext; 
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-width: 1px;
+    text-decoration:none;
+    color:black;
+    padding:2px;
+    margin-top:5px;
+}
+nav ul{
+    list-style:none;
+}
+nav ul a:hover, nav ul a:focus{
+    background-color: lightskyblue;
+}
+fieldset{
+    border:none;
+}
+div{
+    display:table-row;
+}
+#btnCalculate{
+    margin-left:150px;
+}
+#btnConvert{
+    margin-left:275px;
+}
+#btnCreate{
+    margin-left:172px;
+}
+#btnCancel{
+    margin-left:223px;
+}

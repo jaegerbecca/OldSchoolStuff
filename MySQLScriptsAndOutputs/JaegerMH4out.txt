@@ -1,0 +1,185 @@
+Jaeger, Becca 
+mysql> source g:\\CPT242\JaegerMH4.sql
+Database changed
++------------------------+--------------+
+| Studio                 | Phone Number |
++------------------------+--------------+
+| BRIDES DAY STUDIO      | 899-9999     |
+| COLUMBUS CORPORATION   | 564-4444     |
+| WALT DIZZY STUDIOS     | 944-9999     |
+| OREOLE PRODUCTIONS     | 878-7777     |
+| PARLIAMENT PRODUCTIONS | 555-5555     |
+| TOUCHTONES STUDIO      | 878-8787     |
++------------------------+--------------+
+6 rows in set (0.00 sec)
+
+Database changed
++-------------------+----------------------------------+
+| Customer Name     | ifnull(referred, 'NOT REFERRED') |
++-------------------+----------------------------------+
+| MORALES, BONITA   | NOT REFERRED                     |
+| THOMPSON, RYAN    | NOT REFERRED                     |
+| SMITH, LEILA      | NOT REFERRED                     |
+| PIERSON, THOMAS   | NOT REFERRED                     |
+| GIRARD, CINDY     | NOT REFERRED                     |
+| CRUZ, MESHIA      | NOT REFERRED                     |
+| GIANA, TAMMY      | 1003                             |
+| JONES, KENNETH    | NOT REFERRED                     |
+| PEREZ, JORGE      | 1003                             |
+| LUCAS, JAKE       | NOT REFERRED                     |
+| MCGOVERN, REESE   | NOT REFERRED                     |
+| MCKENZIE, WILLIAM | NOT REFERRED                     |
+| NGUYEN, NICHOLAS  | 1006                             |
+| LEE, JASMINE      | NOT REFERRED                     |
+| SCHELL, STEVE     | NOT REFERRED                     |
+| DAUM, MICHELL     | 1010                             |
+| NELSON, BECCA     | NOT REFERRED                     |
+| MONTIASA, GREG    | NOT REFERRED                     |
+| SMITH, JENNIFER   | 1003                             |
+| FALAH, KENNETH    | NOT REFERRED                     |
++-------------------+----------------------------------+
+20 rows in set (0.00 sec)
+
+Database changed
++-----------------+
+| Member Initials |
++-----------------+
+| B. S.           |
+| M. L.           |
+| C. K.           |
+| K. F.           |
+| R. A.           |
+| M. C.           |
+| C. W.           |
+| W. B.           |
+| B. T.           |
+| T. I.           |
+| L. H.           |
+| M. H.           |
+| B. C.           |
+| T. W.           |
+| V. C.           |
+| F. P.           |
+| R. G.           |
+| J. M.           |
+| D. F.           |
+| B. R.           |
+| W. M.           |
+| A. F.           |
+| D. G.           |
++-----------------+
+23 rows in set (0.00 sec)
+
+Database changed
++--------------------------------+-------------------+
+| title                          | Markup Percentage |
++--------------------------------+-------------------+
+| HOW TO GET FASTER PIZZA        | 68%               |
+| THE WOK WAY TO COOK            | 51%               |
+| REVENGE OF MICKEY              | 55%               |
+| BODYBUILD IN 10 MINUTES A DAY  | 65%               |
+| HANDCRANKED COMPUTERS          | 15%               |
+| SHORTEST POEMS                 | 83%               |
+| PAINLESS CHILD-REARING         | 87%               |
+| COOKING WITH MUSHROOMS         | 60%               |
+| HOLY GRAIL OF ORACLE           | 61%               |
+| BUILDING A CAR WITH TOOTHPICKS | 59%               |
+| BIG BEAR AND LITTLE DOVE       | 68%               |
+| DATABASE IMPLEMENTATION        | 78%               |
+| HOW TO MANAGE THE MANAGER      | 107%              |
+| E-BUSINESS THE EASY WAY        | 44%               |
++--------------------------------+-------------------+
+14 rows in set (0.00 sec)
+
+Database changed
++--------------------------------------------------------------------+
+| date_format((now()),'%W, %D day of %M in the year %Y at %h:%i %p') |
++--------------------------------------------------------------------+
+| Tuesday, 18th day of September in the year 2018 at 04:08 PM        |
++--------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
+Database changed
++-----------+----------+----------------------+
+| Last Name | Model    | format(costvalue, 2) |
++-----------+----------+----------------------+
+| Allen     | Suburban | 15,885.01            |
+| Baldwin   | Suburban | 15,885.01            |
+| Patterson | Suburban | 15,885.01            |
+| Baldwin   | Fiero    | 4,290.00             |
+| York      | Fiero    | 4,290.00             |
+| Bittles   | S-10     | 8,950.00             |
+| York      | Regal    | 8,525.08             |
+| Green     | Suburban | 14,225.62            |
++-----------+----------+----------------------+
+8 rows in set (0.00 sec)
+
+Database changed
++-------------+
+| ISBN length |
++-------------+
+|          10 |
++-------------+
+1 row in set (0.00 sec)
+
+Database changed
++------------+-------------+-------------+-------------+
+| Order Date | Ship Date   | Processing  | Payment Due |
++------------+-------------+-------------+-------------+
+| 2003-03-31 | 2003-04-02  | 2           | 2003-05-30  |
+| 2003-03-31 | 2003-04-01  | 1           | 2003-05-30  |
+| 2003-03-31 | 2003-04-01  | 1           | 2003-05-30  |
+| 2003-04-01 | 2003-04-01  | 0           | 2003-05-31  |
+| 2003-04-01 | 2003-04-05  | 4           | 2003-05-31  |
+| 2003-04-01 | 2003-04-02  | 1           | 2003-05-31  |
+| 2003-04-01 | 2003-04-02  | 1           | 2003-05-31  |
+| 2003-04-02 | 2003-04-04  | 2           | 2003-06-01  |
+| 2003-04-02 | 2003-04-03  | 1           | 2003-06-01  |
+| 2003-04-03 | 2003-04-05  | 2           | 2003-06-02  |
+| 2003-04-03 | 2003-04-04  | 1           | 2003-06-02  |
+| 2003-04-03 | 2003-04-05  | 2           | 2003-06-02  |
+| 2003-04-03 | NOT SHIPPED | NOT SHIPPED | 2003-06-02  |
+| 2003-04-03 | 2003-04-04  | 1           | 2003-06-02  |
+| 2003-04-04 | 2003-04-05  | 1           | 2003-06-03  |
+| 2003-04-04 | NOT SHIPPED | NOT SHIPPED | 2003-06-03  |
+| 2003-04-04 | NOT SHIPPED | NOT SHIPPED | 2003-06-03  |
+| 2003-04-04 | 2003-04-05  | 1           | 2003-06-03  |
+| 2003-04-05 | NOT SHIPPED | NOT SHIPPED | 2003-06-04  |
+| 2003-04-05 | NOT SHIPPED | NOT SHIPPED | 2003-06-04  |
+| 2003-04-05 | NOT SHIPPED | NOT SHIPPED | 2003-06-04  |
++------------+-------------+-------------+-------------+
+21 rows in set (0.00 sec)
+
+Database changed
++----------------+--------------------------+-------------------------+
+| artistname     | webaddress               | substring(webaddress,5) |
++----------------+--------------------------+-------------------------+
+| The Neurotics  | www.theneurotics.com     | theneurotics.com        |
+| Sonata         | www.classical.com/sonata | classical.com/sonata    |
+| Jose MacArthur | www.josemacarthur.com    | josemacarthur.com       |
+| Confused       |                          |                         |
+| Today          | www.today.com            | today.com               |
+| 21 West Elm    | www.21westelm.com        | 21westelm.com           |
++----------------+--------------------------+-------------------------+
+6 rows in set (0.00 sec)
+
+Database changed
++------------------------+--------------------+
+| email                  | locate('@', email) |
++------------------------+--------------------+
+| bs@cookery.com         |                  3 |
+| mlambert@corkscrew.com |                  9 |
+| ral@mightyhostl.com    |                  4 |
+| mjc17@daviscorp.com    |                  6 |
+| wbman@uptime.net       |                  6 |
+| taffygirl@signon.com   |                 10 |
+| twong@tamilla.org      |                  6 |
+| jmac@dowop.com         |                  5 |
+| fennyd@bitspeed.com    |                  7 |
+| wmorrow@wmorrow.com    |                  8 |
+| kosmo@ispl.com         |                  6 |
+| goody@irvingnet.com    |                  6 |
++------------------------+--------------------+
+12 rows in set (0.00 sec)
+
+mysql> notee;

@@ -1,0 +1,17 @@
+Jaeger, Becca
+ER Diagram 3 - Mary Richards Housepainting
+
+customers - phone_PK
+	    fname, lname, email, address, referred, referralID
+painters - SSN_PK
+	   fname, lname, phone, email, address, rate
+jobs - jobID_PK
+       address, phone_FK, SSN_FK, services
+
+1 customer can request M jobs  T
+1 job can involve M customers  F
+1 to M, parent=customer, child=jobs
+
+1 painter can work M jobs  T
+1 job can have M painters  T
+M to M, resolve with junction table = schedule - jobID_PK, SSN_PK, hours

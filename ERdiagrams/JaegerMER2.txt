@@ -1,0 +1,29 @@
+Jaeger, Becca
+ER Diagram 2
+
+owner - pk_ownerID
+	   firstname, lastname, phone, address, fk_ticketNo
+pet - pk_rabiesTag
+      fk_ownerID, height, weight, age, species, fk_breedID, sex, favfood
+breed(lookup table) - pk_breedID
+		      breed
+boarding - pk_ticketNo
+	   dropoff, pickup, fk_Type
+enclosure(lookup table) - pk_Type
+			  size
+
+1 owner can have M pets   T
+1 pet can have M owners   F
+1 to M parent=owner, child=pet
+
+1 pet can be M breeds   F
+1 breed can have M pets T   
+1 to M parent=breed, child=pet
+
+1 owner can have M boardings     T
+1 boarding can include M owners  F
+1 to M parent=owner, child=boarding
+
+1 boarding can use M enclosures          F
+1 enclosure can be used for M boardings  T
+1 to M parent=enclosure, child=boarding

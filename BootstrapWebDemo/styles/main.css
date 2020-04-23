@@ -1,0 +1,66 @@
+/* Becca Jaeger Bootstrap Demo */
+body{
+	background-color:#330d00;
+}
+footer{
+	margin-top:20px;
+	border-top-style:double;
+	border-top-color:#ffa31a;
+	border-top-width:5px;
+}
+form{
+	margin-bottom:20px;
+}
+.container{
+	background-color:#fff;
+}
+.jumbotron{
+	background-color:#ffffff;
+	border-style: double;
+	border-color:#ffa31a;
+	border-width:5px;
+	margin-top:10px;
+}
+.table-striped tbody tr:nth-of-type(odd){
+	background-color:#ffa31a;
+}
+.table-striped tbody tr:nth-of-type(even){
+	background-color:#f2f2f2;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #cc3300;
+}
+.nav-link{
+	color:#cc3300;
+}
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #cc3300;
+  border-color: #cc3300;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #cc3300;
+  border-color: #cc3300;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: #330d00;
+  border-color: #330d00;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #330d00;
+  border-color: #330d00;
+}
+.img-thumbnail{
+	margin-bottom:50px;
+}

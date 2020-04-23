@@ -1,0 +1,78 @@
+/* main stuff for phones, etc */
+body {font-size: 1 em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+main {
+	max-width:1000px;
+	margin:0 auto;
+	padding:10px;
+}
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3{
+	text-align:center;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+h1 img{
+	max-width:150px;
+	max-height:150px;
+	display:inline-block;
+	vertical-align:middle;
+}
+p {font-size: 1 em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+footer img {
+	float: left;
+	margin-right:20px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+footer img.last{
+	margin-right:0;
+}
+nav{
+	max-width:950px;
+	margin:0 auto;
+}
+nav div{
+	max-width: 260px;
+	padding:0;
+	margin:0 auto;
+}
+
+/*tablet stuff */
+
+@media only screen and (min-width: 600px) and (max-width: 849px) {
+    
+   article{
+	   width:250px;
+	   float:left;
+	   margin-right:35px;
+	   margin-left:35px;
+	   padding-left:35px;
+	   
+   } 
+}
+/* desktop stuff */
+ 
+  @media only screen and (min-width: 850px) {
+   article{
+   margin:0;
+   padding:0;
+   }	   
+article article{
+	   width:225px;
+	   float:left;
+	   margin-right:25px;
+	   
+   } 
+  article div{
+	   width:225px;
+	   float:right;
+	   margin-left:25px;
+	   
+   } 
+  }

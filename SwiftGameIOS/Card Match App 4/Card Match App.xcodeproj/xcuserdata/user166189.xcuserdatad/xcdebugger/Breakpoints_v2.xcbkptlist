@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7C64F256-C5BA-4069-8BD3-E4BF165609D8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5F1B168-B3D1-4330-B087-CCAD63FECDB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Card Match App/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "timerElapsed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F5F1B168-B3D1-4330-B087-CCAD63FECDB4 - ea0281a1adcf18d3"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Card_Match_App.ViewController.timerElapsed() -&gt; ()"
+                  moduleName = "Card Match App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user166189/Downloads/Card%20Match%20App%203/Card%20Match%20App/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "F5F1B168-B3D1-4330-B087-CCAD63FECDB4 - cf48a1713ac649a7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Card_Match_App.ViewController.timerElapsed() -&gt; ()"
+                  moduleName = "Card Match App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user166189/Downloads/Card%20Match%20App%203/Card%20Match%20App/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "127">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

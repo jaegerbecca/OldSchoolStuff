@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".EditRecordFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/recordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtRecordID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/record_id" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/startM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/starting_mileage" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/endM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ending_mileage" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtRate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/mileage_rate" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_record" />
+
+</LinearLayout>

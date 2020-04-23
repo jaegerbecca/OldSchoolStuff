@@ -1,0 +1,36 @@
+Jaeger, Becca
+ER Diagram 1
+
+branch - branchID_PK
+	 location, ISBN_FK
+employee - SSN_PK
+	   branchID_FK, firstname, lastname, address, phone
+publisher - pubID_PK
+	    pubname, publocation
+author - authorID_PK
+	 authorlast, authorfirst
+books - ISBN_PK
+	title, pubID_FK, genre_FK, price, paperback(y/n), authorID_FK, quantity, 
+	branchID_FK
+genre - genre_PK (LOOK UP TABLE)
+
+
+1 branch can have M employees         T
+1 employee can work at M branches     F
+1 to M parent=branch, child=employee
+
+1 publisher can print M books           T
+1 book can be printed by M publishers   F
+1 to M parent=publisher, child=books
+
+1 author can write M books		 T	
+1 book can be written by M authors       T
+M to M, resolve it -> junction table-authorTitles
+
+1 genre can contain M books    T
+1 book can be M genres         F
+1 to M parent=genre, child=books
+
+1 book can be in M branches     T
+1 branch can contain M books    T
+M to M, resolve it->junction tables-inventory

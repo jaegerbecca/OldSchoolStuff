@@ -1,0 +1,127 @@
+mysql> source c:\Users\welchm\Desktop\JaegerMH6.sql
+Database changed
+Query OK, 1 row affected (0.03 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from publisher;
++-------+------------------------+-----------------+--------------+
+| PubID | Name                   | Contact         | Phone        |
++-------+------------------------+-----------------+--------------+
+|     1 | PRINTING IS US         | TOMMIE SEYMOUR  | 000-714-8321 |
+|     2 | PUBLISH OUR 'AY        | JANE TOMLIN     | 010-410-0010 |
+|     3 | AMERICAN PUBLISHING    | DAVID DAVIDSON  | 800-555-1211 |
+|     4 | READING MATERIALS INC. | RENEE SMITH     | 800-555-9743 |
+|     5 | REED-N-RITE            | SEBASTIA' JONES | 800-555-8284 |
+|     6 | Aldmeri Dominion       | Ayrenn Aldmeri  | 123-456-7890 |
++-------+------------------------+-----------------+--------------+
+6 rows in set (0.00 sec)
+
+mysql> select * from books;
++------------+--------------------------------+------------+-------+-------+--------+-------------+
+| ISBN       | Title                          | PubDate    | PubID | Cost  | Retail | Category    |
++------------+--------------------------------+------------+-------+-------+--------+-------------+
+| 0132149871 | HOW TO GET FASTER PIZZA        | 2002-11-11 |     4 | 17.85 |  29.95 | SELF HELP   |
+| 0299282519 | THE WOK WAY TO COOK            | 2000-09-11 |     4 | 19.00 |  28.75 | COOKING     |
+| 0401140733 | REVENGE OF MICKEY              | 2001-12-14 |     1 | 14.20 |  22.00 | FAMILY LIFE |
+| 1013901204 | Eyes of the Queen              | 2014-04-04 |     6 | 29.99 |  49.99 | COMPUTER    |
+| 1059831198 | BODYBUILD IN 10 MINUTES A DAY  | 2001-01-21 |     4 | 18.75 |  30.95 | FITNESS     |
+| 1915762492 | HANDCRANKED COMPUTERS          | 2001-01-21 |     3 | 21.80 |  25.00 | COMPUTER    |
+| 2147428890 | SHORTEST POEMS                 | 2001-05-01 |     5 | 21.85 |  39.95 | LITERATURE  |
+| 2491748320 | PAINLESS CHILD-REARING         | 2000-07-17 |     5 | 48.00 |  89.95 | FAMILY LIFE |
+| 3437212490 | COOKING WITH MUSHROOMS         | 2000-02-28 |     4 | 12.50 |  19.95 | COOKING     |
+| 3957136468 | HOLY GRAIL OF ORACLE           | 2001-12-31 |     3 | 47.25 |  75.95 | COMPUTER    |
+| 4981341710 | BUILDING A CAR WITH TOOTHPICKS | 2002-03-18 |     2 | 37.80 |  59.95 | CHILDREN    |
+| 8117949391 | BIG BEAR AND LITTLE DOVE       | 2001-11-08 |     5 |  5.32 |   8.95 | CHILDREN    |
+| 8843172113 | DATABASE IMPLEMENTATION        | 1999-06-04 |     3 | 31.40 |  55.95 | COMPUTER    |
+| 9247381001 | HOW TO MANAGE THE MANAGER      | 1999-05-09 |     1 | 15.40 |  31.95 | BUSINESS    |
+| 9959789321 | E-BUSINESS THE EASY WAY        | 2002-03-01 |     2 | 37.90 |  54.50 | COMPUTER    |
++------------+--------------------------------+------------+-------+-------+--------+-------------+
+15 rows in set (0.00 sec)
+
+mysql> select * from author;
++----------+-----------+---------+
+| AuthorID | Lname     | Fname   |
++----------+-----------+---------+
+| A100     | AUSTIN    | JAMES   |
+| A105     | ADAMS     | JUAN    |
+| B100     | BAKER     | JACK    |
+| D100     | Dar       | Razum   |
+| F100     | FIELDS    | OSCAR   |
+| J100     | JONES     | JANICE  |
+| K100     | KZOCHSKY  | TAMARA  |
+| M100     | MARTINEZ  | SHEILA  |
+| P100     | PORTER    | LISA    |
+| P105     | PETERSON  | TINA    |
+| R100     | ROBINSON  | ROBERT  |
+| S100     | SMITH     | SAM     |
+| W100     | WHITE     | WILLIAM |
+| W105     | WHITE     | LISA    |
+| W110     | WILKINSON | ANTHONY |
++----------+-----------+---------+
+15 rows in set (0.00 sec)
+
+mysql> select * from customers;
++-------------+----------+-----------+----------------------+---------------+-------+-------+----------+
+| Customernum | LastName | FirstName | Address              | City          | State | Zip   | Referred |
++-------------+----------+-----------+----------------------+---------------+-------+-------+----------+
+|        1001 | MORALES  | BONITA    | P.O. BOX 651         | EASTPOINT     | FL    | 32328 |     NULL |
+|        1002 | THOMPSON | RYAN      | P.O. BOX 9835        | SANTA MONICA  | CA    | 90404 |     NULL |
+|        1003 | SMITH    | LEILA     | P.O. BOX 66          | TALLAHASSEE   | FL    | 32306 |     NULL |
+|        1004 | PIERSON  | THOMAS    | 69821 SOUTH AVENUE   | BOISE         | ID    | 83707 |     NULL |
+|        1005 | GIRARD   | CINDY     | P.O. BOX 851         | SEATTLE       | WA    | 98115 |     NULL |
+|        1006 | CRUZ     | MESHIA    | 82 DIRT ROAD         | ALBANY        | NY    | 12211 |     NULL |
+|        1007 | GIANA    | TAMMY     | 9153 MAIN STREET     | AUSTIN        | TX    | 78710 |     1003 |
+|        1008 | JONES    | KENNETH   | P.O. BOX 137         | CHEYENNE      | WY    | 82003 |     NULL |
+|        1009 | PEREZ    | JORGE     | P.O. BOX 8564        | BURBANK       | CA    | 91510 |     1003 |
+|        1010 | LUCAS    | JAKE      | 114 EAST SAVANNAH    | ATLANTA       | GA    | 30314 |     NULL |
+|        1011 | MCGOVERN | REESE     | P.O. BOX 18          | CHICAGO       | IL    | 60606 |     NULL |
+|        1012 | MCKENZIE | WILLIAM   | P.O. BOX 971         | BOSTON        | MA    | 2110  |     NULL |
+|        1013 | NGUYEN   | NICHOLAS  | 357 WHITE EAGLE AVE. | CLERMONT      | FL    | 34711 |     1006 |
+|        1014 | LEE      | JASMINE   | P.O. BOX 2947        | CODY          | WY    | 82414 |     NULL |
+|        1015 | SCHELL   | STEVE     | P.O. BOX 677         | MIAMI         | FL    | 33111 |     NULL |
+|        1016 | DAUM     | MICHELL   | 9851231 LONG ROAD    | BURBANK       | CA    | 91508 |     1010 |
+|        1017 | NELSON   | BECCA     | P.O. BOX 563         | KALMAZOO      | MI    | 49006 |     NULL |
+|        1018 | MONTIASA | GREG      | 1008 GRAND AVENUE    | MACON         | GA    | 31206 |     NULL |
+|        1019 | SMITH    | JENNIFER  | P.O. BOX 1151        | MORRISTOWN    | NJ    | 7962  |     1003 |
+|        1020 | FALAH    | KENNETH   | P.O. BOX 335         | TRENTON       | NJ    | 8607  |     NULL |
+|        1050 | Khan     | Shere     | 15 Khenarthis Roost  | North Augusta | SC    | 29841 |     NULL |
++-------------+----------+-----------+----------------------+---------------+-------+-------+----------+
+21 rows in set (0.00 sec)
+
+mysql> select * from orders;
++----------+-------------+------------+------------+---------------------+---------------+-----------+---------+
+| Ordernum | Customernum | OrderDate  | ShipDate   | ShipStreet          | ShipCity      | ShipState | ShipZip |
++----------+-------------+------------+------------+---------------------+---------------+-----------+---------+
+|     1000 |        1005 | 2003-03-31 | 2003-04-02 | 1201 ORANGE AVE     | SEATTLE       | WA        | 98114   |
+|     1001 |        1010 | 2003-03-31 | 2003-04-01 | 114 EAST SAVANNAH   | ATLANTA       | GA        | 30314   |
+|     1002 |        1011 | 2003-03-31 | 2003-04-01 | 58 TILA CIRCLE      | CHICAGO       | IL        | 60605   |
+|     1003 |        1001 | 2003-04-01 | 2003-04-01 | 958 MAGNOLIA LANE   | EASTPOINT     | FL        | 32328   |
+|     1004 |        1020 | 2003-04-01 | 2003-04-05 | 561 ROUNDABOUT WAY  | TRENTON       | NJ        | 86010   |
+|     1005 |        1018 | 2003-04-01 | 2003-04-02 | 1008 GRAND AVENUE   | MACON         | GA        | 31206   |
+|     1006 |        1003 | 2003-04-01 | 2003-04-02 | 558A CAPITOL HWY.   | TALLAHASSEE   | FL        | 32307   |
+|     1007 |        1007 | 2003-04-02 | 2003-04-04 | 9153 MAIN STREET    | AUSTIN        | TX        | 78710   |
+|     1008 |        1004 | 2003-04-02 | 2003-04-03 | 69821 SOUTH AVENUE  | BOISE         | ID        | 83707   |
+|     1009 |        1005 | 2003-04-03 | 2003-04-05 | 9 LIGHTENING RD.    | SEATTLE       | WA        | 98110   |
+|     1010 |        1019 | 2003-04-03 | 2003-04-04 | 384 WRONG WAY HOME  | MORRISTOWN    | NJ        | 79600   |
+|     1011 |        1010 | 2003-04-03 | 2003-04-05 | 102 WEST LAFAYETTE  | ATLANTA       | GA        | 30311   |
+|     1012 |        1017 | 2003-04-03 | NULL       | 1295 WINDY AVENUE   | KALMAZOO      | MI        | 49002   |
+|     1013 |        1014 | 2003-04-03 | 2003-04-04 | 7618 MOUNTAIN RD.   | CODY          | WY        | 82414   |
+|     1014 |        1007 | 2003-04-04 | 2003-04-05 | 9153 MAIN STREET    | AUSTIN        | TX        | 78710   |
+|     1015 |        1020 | 2003-04-04 | NULL       | 557 GLITTER ST.     | TRENTON       | NJ        | 86060   |
+|     1016 |        1003 | 2003-04-04 | NULL       | 9901 SEMINOLE WAY   | TALLAHASSEE   | FL        | 32307   |
+|     1017 |        1015 | 2003-04-04 | 2003-04-05 | 887 HOT ASPHALT ST  | MIAMI         | FL        | 33112   |
+|     1018 |        1001 | 2003-04-05 | NULL       | 95812 HIGHWAY 98    | EASTPOINT     | FL        | 32328   |
+|     1019 |        1018 | 2003-04-05 | NULL       | 1008 GRAND AVENUE   | MACON         | GA        | 31206   |
+|     1020 |        1008 | 2003-04-05 | NULL       | 195 JAMISON LANE    | CHEYENNE      | WY        | 82003   |
+|     1025 |        1050 | 2018-11-05 | 2018-11-08 | 15 Khenarthis Roost | North Augusta | SC        | 29841   |
++----------+-------------+------------+------------+---------------------+---------------+-----------+---------+
+22 rows in set (0.00 sec)
+
+mysql> notee;

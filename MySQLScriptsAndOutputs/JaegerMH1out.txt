@@ -1,0 +1,193 @@
+mysql> source c:\Scripts\JaegerMH1.sql
++------------+--------------------------------+------------+-------+-------+--------+-------------+
+| ISBN       | Title                          | PubDate    | PubID | Cost  | Retail | Category    |
++------------+--------------------------------+------------+-------+-------+--------+-------------+
+| 0132149871 | HOW TO GET FASTER PIZZA        | 2002-11-11 |     4 | 17.85 |  29.95 | SELF HELP   |
+| 0299282519 | THE WOK WAY TO COOK            | 2000-09-11 |     4 | 19.00 |  28.75 | COOKING     |
+| 0401140733 | REVENGE OF MICKEY              | 2001-12-14 |     1 | 14.20 |  22.00 | FAMILY LIFE |
+| 1059831198 | BODYBUILD IN 10 MINUTES A DAY  | 2001-01-21 |     4 | 18.75 |  30.95 | FITNESS     |
+| 1915762492 | HANDCRANKED COMPUTERS          | 2001-01-21 |     3 | 21.80 |  25.00 | COMPUTER    |
+| 2147428890 | SHORTEST POEMS                 | 2001-05-01 |     5 | 21.85 |  39.95 | LITERATURE  |
+| 2491748320 | PAINLESS CHILD-REARING         | 2000-07-17 |     5 | 48.00 |  89.95 | FAMILY LIFE |
+| 3437212490 | COOKING WITH MUSHROOMS         | 2000-02-28 |     4 | 12.50 |  19.95 | COOKING     |
+| 3957136468 | HOLY GRAIL OF ORACLE           | 2001-12-31 |     3 | 47.25 |  75.95 | COMPUTER    |
+| 4981341710 | BUILDING A CAR WITH TOOTHPICKS | 2002-03-18 |     2 | 37.80 |  59.95 | CHILDREN    |
+| 8117949391 | BIG BEAR AND LITTLE DOVE       | 2001-11-08 |     5 |  5.32 |   8.95 | CHILDREN    |
+| 8843172113 | DATABASE IMPLEMENTATION        | 1999-06-04 |     3 | 31.40 |  55.95 | COMPUTER    |
+| 9247381001 | HOW TO MANAGE THE MANAGER      | 1999-05-09 |     1 | 15.40 |  31.95 | BUSINESS    |
+| 9959789321 | E-BUSINESS THE EASY WAY        | 2002-03-01 |     2 | 37.90 |  54.50 | COMPUTER    |
++------------+--------------------------------+------------+-------+-------+--------+-------------+
+14 rows in set (0.00 sec)
+
++--------------------------------+
+| title                          |
++--------------------------------+
+| HOW TO GET FASTER PIZZA        |
+| THE WOK WAY TO COOK            |
+| REVENGE OF MICKEY              |
+| BODYBUILD IN 10 MINUTES A DAY  |
+| HANDCRANKED COMPUTERS          |
+| SHORTEST POEMS                 |
+| PAINLESS CHILD-REARING         |
+| COOKING WITH MUSHROOMS         |
+| HOLY GRAIL OF ORACLE           |
+| BUILDING A CAR WITH TOOTHPICKS |
+| BIG BEAR AND LITTLE DOVE       |
+| DATABASE IMPLEMENTATION        |
+| HOW TO MANAGE THE MANAGER      |
+| E-BUSINESS THE EASY WAY        |
++--------------------------------+
+14 rows in set (0.00 sec)
+
++--------------------------------+------------------+
+| title                          | Publication Date |
++--------------------------------+------------------+
+| HOW TO GET FASTER PIZZA        | 2002-11-11       |
+| THE WOK WAY TO COOK            | 2000-09-11       |
+| REVENGE OF MICKEY              | 2001-12-14       |
+| BODYBUILD IN 10 MINUTES A DAY  | 2001-01-21       |
+| HANDCRANKED COMPUTERS          | 2001-01-21       |
+| SHORTEST POEMS                 | 2001-05-01       |
+| PAINLESS CHILD-REARING         | 2000-07-17       |
+| COOKING WITH MUSHROOMS         | 2000-02-28       |
+| HOLY GRAIL OF ORACLE           | 2001-12-31       |
+| BUILDING A CAR WITH TOOTHPICKS | 2002-03-18       |
+| BIG BEAR AND LITTLE DOVE       | 2001-11-08       |
+| DATABASE IMPLEMENTATION        | 1999-06-04       |
+| HOW TO MANAGE THE MANAGER      | 1999-05-09       |
+| E-BUSINESS THE EASY WAY        | 2002-03-01       |
++--------------------------------+------------------+
+14 rows in set (0.00 sec)
+
++-------------+--------------+-------+
+| customernum | city         | state |
++-------------+--------------+-------+
+|        1001 | EASTPOINT    | FL    |
+|        1002 | SANTA MONICA | CA    |
+|        1003 | TALLAHASSEE  | FL    |
+|        1004 | BOISE        | ID    |
+|        1005 | SEATTLE      | WA    |
+|        1006 | ALBANY       | NY    |
+|        1007 | AUSTIN       | TX    |
+|        1008 | CHEYENNE     | WY    |
+|        1009 | BURBANK      | CA    |
+|        1010 | ATLANTA      | GA    |
+|        1011 | CHICAGO      | IL    |
+|        1012 | BOSTON       | MA    |
+|        1013 | CLERMONT     | FL    |
+|        1014 | CODY         | WY    |
+|        1015 | MIAMI        | FL    |
+|        1016 | BURBANK      | CA    |
+|        1017 | KALMAZOO     | MI    |
+|        1018 | MACON        | GA    |
+|        1019 | MORRISTOWN   | NJ    |
+|        1020 | TRENTON      | NJ    |
++-------------+--------------+-------+
+20 rows in set (0.00 sec)
+
++------------------------+-----------------+--------------+
+| name                   | Contact Person  | phone        |
++------------------------+-----------------+--------------+
+| PRINTING IS US         | TOMMIE SEYMOUR  | 000-714-8321 |
+| PUBLISH OUR 'AY        | JANE TOMLIN     | 010-410-0010 |
+| AMERICAN PUBLISHING    | DAVID DAVIDSON  | 800-555-1211 |
+| READING MATERIALS INC. | RENEE SMITH     | 800-555-9743 |
+| REED-N-RITE            | SEBASTIA' JONES | 800-555-8284 |
++------------------------+-----------------+--------------+
+5 rows in set (0.00 sec)
+
++-------------+
+| category    |
++-------------+
+| SELF HELP   |
+| COOKING     |
+| FAMILY LIFE |
+| FITNESS     |
+| COMPUTER    |
+| LITERATURE  |
+| CHILDREN    |
+| BUSINESS    |
++-------------+
+8 rows in set (0.00 sec)
+
++-------------+
+| customernum |
++-------------+
+|        1001 |
+|        1003 |
+|        1004 |
+|        1005 |
+|        1007 |
+|        1008 |
+|        1010 |
+|        1011 |
+|        1014 |
+|        1015 |
+|        1017 |
+|        1018 |
+|        1019 |
+|        1020 |
++-------------+
+14 rows in set (0.00 sec)
+
++-------------+--------------------------------+
+| category    | title                          |
++-------------+--------------------------------+
+| SELF HELP   | HOW TO GET FASTER PIZZA        |
+| COOKING     | THE WOK WAY TO COOK            |
+| FAMILY LIFE | REVENGE OF MICKEY              |
+| FITNESS     | BODYBUILD IN 10 MINUTES A DAY  |
+| COMPUTER    | HANDCRANKED COMPUTERS          |
+| LITERATURE  | SHORTEST POEMS                 |
+| FAMILY LIFE | PAINLESS CHILD-REARING         |
+| COOKING     | COOKING WITH MUSHROOMS         |
+| COMPUTER    | HOLY GRAIL OF ORACLE           |
+| CHILDREN    | BUILDING A CAR WITH TOOTHPICKS |
+| CHILDREN    | BIG BEAR AND LITTLE DOVE       |
+| COMPUTER    | DATABASE IMPLEMENTATION        |
+| BUSINESS    | HOW TO MANAGE THE MANAGER      |
+| COMPUTER    | E-BUSINESS THE EASY WAY        |
++-------------+--------------------------------+
+14 rows in set (0.00 sec)
+
++---------+-----------+
+| fname   | lname     |
++---------+-----------+
+| JAMES   | AUSTIN    |
+| JUAN    | ADAMS     |
+| JACK    | BAKER     |
+| OSCAR   | FIELDS    |
+| JANICE  | JONES     |
+| TAMARA  | KZOCHSKY  |
+| SHEILA  | MARTINEZ  |
+| LISA    | PORTER    |
+| TINA    | PETERSON  |
+| ROBERT  | ROBINSON  |
+| SAM     | SMITH     |
+| WILLIAM | WHITE     |
+| LISA    | WHITE     |
+| ANTHONY | WILKINSON |
++---------+-----------+
+14 rows in set (0.00 sec)
+
++--------------------------------+--------+
+| title                          | Profit |
++--------------------------------+--------+
+| HOW TO GET FASTER PIZZA        |  12.10 |
+| THE WOK WAY TO COOK            |   9.75 |
+| REVENGE OF MICKEY              |   7.80 |
+| BODYBUILD IN 10 MINUTES A DAY  |  12.20 |
+| HANDCRANKED COMPUTERS          |   3.20 |
+| SHORTEST POEMS                 |  18.10 |
+| PAINLESS CHILD-REARING         |  41.95 |
+| COOKING WITH MUSHROOMS         |   7.45 |
+| HOLY GRAIL OF ORACLE           |  28.70 |
+| BUILDING A CAR WITH TOOTHPICKS |  22.15 |
+| BIG BEAR AND LITTLE DOVE       |   3.63 |
+| DATABASE IMPLEMENTATION        |  24.55 |
+| HOW TO MANAGE THE MANAGER      |  16.55 |
+| E-BUSINESS THE EASY WAY        |  16.60 |
++--------------------------------+--------+
+14 rows in set (0.00 sec)
+
+mysql> notee;

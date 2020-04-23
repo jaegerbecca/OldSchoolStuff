@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 29, 2019, 12:15:56 PM
+    Author     : welchm
+*/
+fieldset{
+    margin-bottom:1rem;
+}
+legend{
+    font-size:1rem;
+}
+.form-check, .form-control{
+    margin-bottom: 1rem;
+}
+.errormsg{
+    color:red;
+    font-style: italic;
+}
+a, a:focus, a:hover {
+    text-decoration: none;
+    color: white;
+}
+table{
+    margin:1rem;
+}
+th, td{
+    padding:.75rem;
+}
+td.last{
+    text-align: right;
+}
+.stripes tbody tr:nth-of-type(odd) {
+  background-color: #86cfda;
+}

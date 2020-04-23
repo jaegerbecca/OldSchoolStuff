@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MileageTracker</string>
+    <string name="mileage_tracker">Mileage Tracker</string>
+    <string name="what_to_do_with_records">What to do with Records?</string>
+
+    <string-array name="fragList">
+        <item>Add Record</item>
+        <item>View Record</item>
+        <item>Edit Record</item>
+        <item>Delete Record</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="starting_mileage">Starting Mileage</string>
+    <string name="ending_mileage">Ending Mileage</string>
+    <string name="mileage_rate">Mileage Rate</string>
+    <string name="add_record">Add Record</string>
+    <string name="edit_record">Edit Record</string>
+    <string name="delete_record">Delete Record</string>
+    <string name="enter_id_of_record_to_delete">Record Date ex. yyyy-mm-dd</string>
+    <string name="mileage_records">Mileage Records</string>
+    <string name="record_id">Record Date ex. yyyy-mm-dd</string>
+    <string name="view_records">View Records</string>
+    <string name="record_date_to_search">Record Date to Search</string>
+    <string name="search_records">Search Records</string>
+</resources>
