@@ -1,1 +1,3 @@
-﻿  ch5.vcxproj -> E:\old stuff\S2\CPT232\ch5\Debug\ch5.exe
+﻿  jaegerch5hangmanv3.cpp
+C:\Users\toybo\Documents\GitHub\OldSchoolStuff\OldC++\ch5\jaegerch5hangmanv3.cpp(33,7): warning C4101: 'guess': unreferenced local variable
+C:\Users\toybo\Documents\GitHub\OldSchoolStuff\OldC++\ch5\jaegerch5hangmanv3.cpp(104,20): warning C4018: '<': signed/unsigned mismatch
